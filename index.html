@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATHENA</title>
+  <style>:root {
+  --bg: #0E1414; --surface: #17201F; --text: #E6ECEB; --muted: #9AA9A6;
+  --accent: #34D399; --line: #2A3534;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #FFFFFF; --surface: #F2F5F4; --text: #1A2120; --muted: #5F7370;
+    --accent: #0F8A63; --line: #D5DEDC;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { background: var(--surface); border-bottom: 1px solid var(--line); }
+header .wrap { padding-top: 12px; padding-bottom: 12px; }
+.brand { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-decoration: none; }
+nav.lang { float: right; color: var(--muted); font-size: 14px; }
+nav.docs { clear: both; display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 8px; font-size: 15px; }
+nav a { color: var(--text); }
+nav a[aria-current] { color: var(--accent); font-weight: 600; text-decoration: none; }
+main { padding-top: 8px; padding-bottom: 48px; overflow-wrap: anywhere; }
+.version { color: var(--muted); font-size: 14px; }
+h1 { font-size: 26px; line-height: 1.3; }
+h2 { font-size: 19px; color: var(--accent); margin-top: 28px; }
+a { color: var(--accent); }
+li { margin-bottom: 6px; }
+.index { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 24px; }
+</style>
+</head>
+<body>
+  <header><div class="wrap"><span class="brand">ATHENA</span></div></header>
+  <main class="wrap index">
+      <section lang="es">
+        <h2>Español</h2>
+        <ul>
+          <li><a href="es/privacy.html">Política de privacidad</a></li>
+          <li><a href="es/terms.html">Condiciones de uso</a></li>
+          <li><a href="es/contact.html">Contacto</a></li>
+          <li><a href="es/delete-account.html">Borrar mi cuenta</a></li>
+        </ul>
+      </section>
+      <section lang="en">
+        <h2>English</h2>
+        <ul>
+          <li><a href="en/privacy.html">Privacy policy</a></li>
+          <li><a href="en/terms.html">Terms of use</a></li>
+          <li><a href="en/contact.html">Contact</a></li>
+          <li><a href="en/delete-account.html">Delete my account</a></li>
+        </ul>
+      </section>
+      <section lang="de">
+        <h2>Deutsch</h2>
+        <ul>
+          <li><a href="de/privacy.html">Datenschutzerklärung</a></li>
+          <li><a href="de/terms.html">Nutzungsbedingungen</a></li>
+          <li><a href="de/contact.html">Kontakt</a></li>
+          <li><a href="de/delete-account.html">Mein Konto löschen</a></li>
+        </ul>
+      </section>
+  </main>
+</body>
+</html>
